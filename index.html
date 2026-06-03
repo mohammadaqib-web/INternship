@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Application Form</h1>
+    <form>
+      <table>
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label for="">Name</label>
+          <input type="text" />
+        </fieldset>
+        
+        <tr>
+          <td><label for="">First Name:</label></td>
+          <td><input type="text" required minlength="3" /></td>
+          <td><label for="">Last Name:</label></td>
+          <td><input type="text" /></td>
+        </tr>
+
+        <tr>
+          <td><label for="">Date of Birth:</label></td>
+          <td><input type="date" min="1975-01-01" max="2000-01-01" /></td>
+          <td><label for="">Age</label></td>
+          <td><input type="number" /></td>
+        </tr>
+
+        <tr>
+          <td><label for="">Gender:</label></td>
+          <td>
+            <select name="gender">
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+          </td>
+          <td><label for="" aria-required="true">Email:</label></td>
+          <td><input type="email" placeholder="Enter your email" /></td>
+        </tr>
+
+        <tr>
+          <td><label for="">Positons Available:</label></td>
+          <td colspan="3">
+            <input type="radio" name="positions" id="junior_developer" />
+            <label for="junior_developer">Junior Developer</label>
+            <input type="radio" name="positions" id="mid_lvl" />
+            <label for="mid_lvl">Mid-Level Developer</label>
+            <input type="radio" name="positions" id="senior" />
+            <label for="senior">Senior Developer</label>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="">Programming Languages:</label></td>
+          <td colspan="3">
+            <input type="checkbox" name="" id="" />
+            <label for="">C</label>
+            <input type="checkbox" name="" id="" />
+            <label for="">C++</label>
+            <input type="checkbox" name="" id="js" />
+            <label for="js">JavaScript</label>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="">Password:</label></td>
+          <td><input type="password" name="" id="" /></td>
+          <td><label for="">Confirm Password:</label></td>
+          <td><input type="password" name="" id="" /></td>
+        </tr>
+
+        <tr>
+          <td><label for="">Tell me something about yourself</label></td>
+        </tr>
+
+        <tr>
+          <td><textarea name="" id="" cols="30" rows="5"></textarea></td>
+        </tr>
+
+        <tr>
+          <td>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
