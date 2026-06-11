@@ -1,0 +1,42 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#main{
+  height: 350px;
+  width: 250px;
+  border: 1px solid rgba(128, 128, 128, 0.349);
+  border-radius: 10px;
+  text-align: center;
+  padding: 15px;
+}
+img{
+    border-radius: 50%;
+    border: 1px solid;
+}
+hr{
+    border: none;
+    border-top: 1px solid blue;
+}
+button{
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+#btn-1{
+    background-color: blueviolet;
+}
+#btn-2{
+    background-color: blue;
+}
+#btn-3{
+    background-color: green;
+}
+h1{
+    line-height: 0px;
+}

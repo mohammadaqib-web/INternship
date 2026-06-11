@@ -1,32 +1,257 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
     <style>
-        .heading{
-            color: red;
-        }
-        .heading2{
-            color: brown;
-        }
-        p{
-            font-size: 4rem;
-        }
-        #head{
-            font-size: 2rem;
-        }
+      * {
+        margin: 0;
+        font-family: 'Courier New', Courier, monospace;
+        
+      }
+      h1 {
+        color: rgba(255, 8, 0, 0.5);
+        /* text-align: left; */
+      }
+      .main-section {
+        /* background-color: brown; */
+      }
+      body {
+        /* width: 100%; */
+        /* border: 20px dashed red; */
+        /* border: 2px solid red; */
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkwliXoP-keoFbRwEsom3UQhi3I-HT6yUr4g&s");
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: cover;
+      }
+      p {
+        font-size: 2rem;
+        text-align: justify;
+        line-height: 40px;
+      }
+      a{
+        color: black;
+        text-decoration: line-through;
+      }
     </style>
-</head>
-<body>
-    <h1>Heading 1</h1>
-    <p class="heading" id="head">Heading 3</p>
-    <p class="heading">Heading 2</p>
-    <p class="heading2">Heading 4</p>
-    <p class="heading2">Heading 5</p>
-    <span>Heading 2</span>
-    <span>Heading 3</span>
-    <a href="">Link</a>
-</body>
+  </head>
+  <body>
+    <!-- Header -->
+    <div id="header" class="main-section">
+      <h1 style="">Student Registration Form</h1>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima aut
+        laboriosam neque beatae suscipit quibusdam aperiam, in, quia vero
+        praesentium hic quisquam magnam quis vel voluptatibus. Molestiae quis
+        tempore architecto.
+      </p>
+      <a href="">Amazon</a>
+      <hr />
+    </div>
+
+    <!-- Registration Form -->
+    <div id="registration-form" class="form-container section">
+      <h1>Registration Form</h1>
+
+      <form>
+        <!-- Name -->
+        <label for="name">Full Name:</label>
+        <input
+          type="text"
+          id="name"
+          class="input-field form-input"
+          placeholder="Enter your full name"
+          required
+        />
+
+        <br /><br />
+
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          class="input-field"
+          placeholder="Enter your email"
+          required
+        />
+
+        <br /><br />
+
+        <!-- Password -->
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          class="input-field"
+          placeholder="Enter password"
+          required
+        />
+
+        <br /><br />
+
+        <!-- Age -->
+        <label for="age">Age:</label>
+        <input
+          type="number"
+          id="age"
+          class="input-field"
+          placeholder="Enter your age"
+          required
+        />
+
+        <br /><br />
+
+        <!-- DOB -->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" class="input-field" required />
+
+        <br /><br />
+
+        <!-- Gender -->
+        <label>Gender:</label>
+
+        <input type="radio" id="male" name="gender" />
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" />
+        <label for="female">Female</label>
+
+        <input type="radio" id="other" name="gender" />
+        <label for="other">Other</label>
+
+        <br /><br />
+
+        <!-- Skills -->
+        <label>Skills:</label>
+
+        <input type="checkbox" id="html" />
+        <label for="html">HTML</label>
+
+        <input type="checkbox" id="css" />
+        <label for="css">CSS</label>
+
+        <input type="checkbox" id="js" />
+        <label for="js">JavaScript</label>
+
+        <input type="checkbox" id="react" />
+        <label for="react">React</label>
+
+        <br /><br />
+
+        <!-- Dropdown -->
+        <label for="course">Select Course:</label>
+
+        <select id="course" required>
+          <option value="">Choose Course</option>
+          <option value="frontend">Frontend Development</option>
+          <option value="backend">Backend Development</option>
+          <option value="fullstack">Full Stack Development</option>
+        </select>
+
+        <br /><br />
+
+        <!-- Textarea -->
+        <label for="feedback">Feedback:</label>
+        <br />
+
+        <textarea
+          id="feedback"
+          rows="5"
+          cols="40"
+          placeholder="Write your feedback here..."
+        ></textarea>
+
+        <br /><br />
+
+        <!-- Buttons -->
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
+
+      <hr />
+    </div>
+
+    <!-- Student Data Table -->
+    <div id="student-table" class="table-container section">
+      <h2>Student Details Table</h2>
+
+      <table border="1">
+        <!-- Table Head -->
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Course</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+
+        <!-- Table Body -->
+        <tbody>
+          <tr>
+            <td>Ali</td>
+            <td>ali@gmail.com</td>
+            <td>Frontend</td>
+            <td>Active</td>
+          </tr>
+
+          <tr>
+            <td>Ahmed</td>
+            <td>ahmed@gmail.com</td>
+            <td>Backend</td>
+            <td>Pending</td>
+          </tr>
+
+          <tr>
+            <td>Fatima</td>
+            <td>fatima@gmail.com</td>
+            <td>Full Stack</td>
+            <td>Active</td>
+          </tr>
+        </tbody>
+
+        <!-- Table Footer -->
+        <tfoot>
+          <tr>
+            <td colspan="4">Total Registered Students: 3</td>
+          </tr>
+        </tfoot>
+      </table>
+
+      <hr />
+    </div>
+
+    <!-- Advanced Table -->
+    <div id="advanced-table" class="section">
+      <h2>Advanced Table Example</h2>
+
+      <table border="1">
+        <tr>
+          <th rowspan="2">Student</th>
+          <th colspan="2">Marks</th>
+        </tr>
+
+        <tr>
+          <th>HTML</th>
+          <th>CSS</th>
+        </tr>
+
+        <tr>
+          <td>Aqib</td>
+          <td>90</td>
+          <td>85</td>
+        </tr>
+
+        <tr>
+          <td>Ali</td>
+          <td>88</td>
+          <td>80</td>
+        </tr>
+      </table>
+    </div>
+  </body>
 </html>

@@ -1,0 +1,14 @@
+.div{
+  height: 300px;
+  width: 250px;
+  border: 1px solid grey;
+}
+body{
+  display: flex;
+  height: 100vh;
+  gap: 20px;
+}
+#content{
+  display: flex;
+  flex-direction: column;
+}
