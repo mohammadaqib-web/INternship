@@ -34,3 +34,6 @@ button{
     border: none;
     padding: 10px;
 }
+img{
+    object-fit: contain;
+}
