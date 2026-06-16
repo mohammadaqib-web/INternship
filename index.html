@@ -4,89 +4,150 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      #hero-section {
+        background-image: url("https://www.footprintadventure.com/uploads/media/7%20Highest%20Mountains%20in%20the%20World/dhaulagiri-highest-mountains-in-the-world.jpg");
+        width: 100%;
+        height: 70vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+        color: white;
+      }
+      #nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+        margin-left: 20px;
+      }
+      button {
+        background-color: yellow;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+      }
+      h1 {
+        font-size: 4rem;
+      }
+      #hero-text {
+        width: 40%;
+        padding: 20px 30px;
+      }
+      p {
+        color: black;
+      }
+      .hero-next {
+        display: flex;
+        align-items: center;
+        border-left: 1px solid ;
+      }
+    </style>
   </head>
   <body>
-    <h1>Application Form</h1>
-    <form>
-      <table>
-        <fieldset>
-          <legend>Personal Information</legend>
-          <label for="">Name</label>
-          <input type="text" />
-        </fieldset>
-        
-        <tr>
-          <td><label for="">First Name:</label></td>
-          <td><input type="text" required minlength="3" /></td>
-          <td><label for="">Last Name:</label></td>
-          <td><input type="text" /></td>
-        </tr>
+    <div id="hero-section">
+      <div id="nav">
+        <div style="display: flex; align-items: center">
+          <img
+            src="./assets/mountain1-01-removebg-preview.png"
+            alt=""
+            width="50px"
+          />
+          <h3>My First Place</h3>
+        </div>
+        <div>
+          <a href="">Home </a>
+          <a href="">About</a>
+          <a href="">Gallery</a>
+          <a href="">Contact</a>
+        </div>
+        <div>
+          <button>Plan your trip</button>
+        </div>
+      </div>
+      <!-- <div>
+      <h3>Discover</h3>
+      <h1>Manali</h1>
+    </div> -->
 
-        <tr>
-          <td><label for="">Date of Birth:</label></td>
-          <td><input type="date" min="1975-01-01" max="2000-01-01" /></td>
-          <td><label for="">Age</label></td>
-          <td><input type="number" /></td>
-        </tr>
+      <div id="hero-text">
+        <h2>Discover</h2>
+        <h1>Manali</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+          fugiat qui molestiae velit porro assumenda ipsam corporis.
+          Reprehenderit nulla eum, hic totam doloribus sunt maiores placeat modi
+          porro neque numquam!
+        </p>
+        <br /><br />
+        <button>Explore More</button>
+        <button style="background-color: transparent; border: 1px solid">
+          See Gallery
+        </button>
+      </div>
+    </div>
 
-        <tr>
-          <td><label for="">Gender:</label></td>
-          <td>
-            <select name="gender">
-              <option value="Male">Male</option>
-              <option value="Female">Female</option>
-            </select>
-          </td>
-          <td><label for="" aria-required="true">Email:</label></td>
-          <td><input type="email" placeholder="Enter your email" /></td>
-        </tr>
-
-        <tr>
-          <td><label for="">Positons Available:</label></td>
-          <td colspan="3">
-            <input type="radio" name="positions" id="junior_developer" />
-            <label for="junior_developer">Junior Developer</label>
-            <input type="radio" name="positions" id="mid_lvl" />
-            <label for="mid_lvl">Mid-Level Developer</label>
-            <input type="radio" name="positions" id="senior" />
-            <label for="senior">Senior Developer</label>
-          </td>
-        </tr>
-
-        <tr>
-          <td><label for="">Programming Languages:</label></td>
-          <td colspan="3">
-            <input type="checkbox" name="" id="" />
-            <label for="">C</label>
-            <input type="checkbox" name="" id="" />
-            <label for="">C++</label>
-            <input type="checkbox" name="" id="js" />
-            <label for="js">JavaScript</label>
-          </td>
-        </tr>
-
-        <tr>
-          <td><label for="">Password:</label></td>
-          <td><input type="password" name="" id="" /></td>
-          <td><label for="">Confirm Password:</label></td>
-          <td><input type="password" name="" id="" /></td>
-        </tr>
-
-        <tr>
-          <td><label for="">Tell me something about yourself</label></td>
-        </tr>
-
-        <tr>
-          <td><textarea name="" id="" cols="30" rows="5"></textarea></td>
-        </tr>
-
-        <tr>
-          <td>
-            <button type="submit">Submit</button>
-            <button type="reset">Reset</button>
-          </td>
-        </tr>
-      </table>
-    </form>
+    <div style="display: flex;background-color: white; margin: 0px 40px;padding: 10px;margin-top: -40px;border-radius: 20px;box-shadow: rgba(0,0,0,0.2) 3px 3px 5px;">
+      <div class="hero-next">
+        <img
+          src="./assets/mountain1-01-removebg-preview.png"
+          alt=""
+          width="50px"
+        />
+        <div>
+          <h4>Beautiful Mountains</h4>
+          <p style="color: grey">
+            Breathtaking views of the majestic himalayas.
+          </p>
+        </div>
+      </div>
+      <div class="hero-next">
+        <img
+          src="./assets/mountain1-01-removebg-preview.png"
+          alt=""
+          width="50px"
+        />
+        <div>
+          <h4>Beautiful Mountains</h4>
+          <p style="color: grey">
+            Breathtaking views of the majestic himalayas.
+          </p>
+        </div>
+      </div>
+      <div class="hero-next">
+        <img
+          src="./assets/mountain1-01-removebg-preview.png"
+          alt=""
+          width="50px"
+        />
+        <div>
+          <h4>Beautiful Mountains</h4>
+          <p style="color: grey">
+            Breathtaking views of the majestic himalayas.
+          </p>
+        </div>
+      </div>
+      <div class="hero-next">
+        <img
+          src="./assets/mountain1-01-removebg-preview.png"
+          alt=""
+          width="50px"
+        />
+        <div>
+          <h4>Beautiful Mountains</h4>
+          <p style="color: grey">
+            Breathtaking views of the majestic himalayas.
+          </p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
