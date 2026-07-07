@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @keyframes moveBox {
+        0% {
+          transform: translateY(-200px);
+          /* transform: rotate(0deg); */
+          /* transform: scale(1); */
+        }
+        /* 50%{
+                transform: translateY(300px);
+            } */
+        100% {
+          transform: translateY(0px);
+          /* transform: rotate(360deg); */
+          /* transform: scale(1.1); */
+        }
+      }
+      .overflow_prop {
+        width: 400px;
+        height: 400px;
+      }
+      .travel {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.532);
+      }
+      #left {
+        margin-top: -3px;
+      }
+      #main {
+        width: 300px;
+        border: 1px solid;
+        border-radius: 10px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div id="main"></div> -->
+    <!-- <div style="display: flex; ">
+      <p style="overflow: auto; width: 10%;height: 100px;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, 
+      </p>
+    </div> -->
+    <!-- <div id="main" style="background-color: red;"></div> -->
+    <!-- <div
+      class="main"
+      style="background-color: blue; width: 100px; height: 100px"
+    ></div> -->
+
+    <div id="container">
+      <h1 id="head-1">Travel</h1>
+      <div id="main">
+        <div class="travel">
+          <div id="left">
+            <span>📅</span>
+            <span>Best time to visit</span>
+          </div>
+          <div id="right">
+            <p>March to June</p>
+          </div>
+        </div>
+        <div class="travel">
+          <div id="left">
+            <span>📅</span>
+            <span>Best time to visit</span>
+          </div>
+          <div id="right">
+            <p>March to June</p>
+          </div>
+        </div>
+        <div class="travel">
+          <div id="left">
+            <span>📅</span>
+            <span>Best time to visit</span>
+          </div>
+          <div id="right">
+            <p>March to June</p>
+          </div>
+        </div>
+        <div class="travel">
+          <div id="left">
+            <span>📅</span>
+            <span>Best time to visit</span>
+          </div>
+          <div id="right">
+            <p>March to June</p>
+          </div>
+        </div>
+      </div>
+      <br>
+      <input type="text" id="inputText" placeholder="Enter text of new Paragraph">
+      <button>Add New image</button>
+    </div>
+    
+    <script src="script.js">
+    </script>
+  </body>
+</html>
