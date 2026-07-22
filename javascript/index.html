@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        #main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+        }
+        .clock-time{
+            display: flex;
+        }
+        h1{
+            background-color: black;
+            color: white;
+            padding: 20px;
+            margin: 5px;
+            font-size: 4rem;
+            border-radius: 4px;
+        }
+        h2{
+            font-size: 4rem;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <div class="clock-time">
+        <h1 id="hour-0">0</h1>
+        <h1 id="hour-1">0</h1>
+      </div>
+      <div>
+        <h2>:</h2>
+      </div>
+      <div class="clock-time">
+        <h1 id="min-0">0</h1>
+        <h1 id="min-1">0</h1>
+      </div>
+      <div>
+        <h2>:</h2>
+      </div>
+      <div class="clock-time">
+        <h1 id="sec-0">0</h1>
+        <h1 id="sec-1">0</h1>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
